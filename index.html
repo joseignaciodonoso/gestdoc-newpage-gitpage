@@ -6,8 +6,8 @@
     <link href="img/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link href="css/main.css?v=92409" rel="stylesheet" type="text/css">
-    <script src="js/main.js?v=92409" type="text/javascript"></script>
+    <link href="css/main.css?v=33946" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=33946" type="text/javascript"></script>
     <!-- Meta tags facebook-->
     <meta property="og:title" content="#">
     <meta property="og:description" content="#">
@@ -28,8 +28,14 @@
     <header>
       <div class="header__primary">
         <div class="header__wrap">
+          <div class="header__search">
+            <form action="search.html" method="get"><span class="fa fa-search"></span>
+              <input type="text" name="s" placeholder="Buscar caso de éxito">
+            </form>
+          </div>
           <div class="header__inner">
-            <div class="header__logo"><a href="index.html"><img src="img/icons/logo-gestdoc-blue.svg"></a></div>
+            <div class="header__logo header__logo--color"><a href="index.html"><img src="./img/logos/logo-gestdoc.png"></a></div>
+            <div class="header__logo header__logo--white"><a href="index.html"><img src="./img/logos/logo-gestdoc.png"></a></div>
             <div class="header__nav">
               <div class="header__nav__bg"></div>
               <div class="header__nav__nav">
@@ -42,32 +48,21 @@
                   <div></div>
                   <div></div>
                 </div>
-                <div class="header__nav__logo"><a href="index.html"><img src="img/icons/logo-gestdoc-blue.svg"></a></div>
                 <nav>
                   <ul>
                     <li><a href="index.html">Inicio</a></li>
                     <li><a href="persons.html">Personas</a></li>
                     <li><a href="businesses.html">Empresas</a></li>
+                    <li><a href="docs.html">Tramites</a></li>
                   </ul>
                 </nav>
-                <div class="header__nav__buttons">
-                  <div class="header__item"><a data-open-login class="btn">Ingresar</a></div>
-                </div>
-                <div class="header__nav__footer">
-                  <div class="header__nav__socials">
-                    <div class="header__nav__social"><a href="#"><span class="fa fa-facebook"></span></a></div>
-                    <div class="header__nav__social"><a href="#"><span class="fa fa-instagram"></span></a></div>
-                    <div class="header__nav__social"><a href="#"><span class="fa fa-youtube"></span></a></div>
-                  </div>
-                  <div class="header__nav__date">
-                    <div class="header__nav__text">contacto@gestdoc.cl</div>
-                    <div class="header__nav__number">+56 9 8484 4444</div>
-                  </div>
-                </div>
               </div>
             </div>
             <div class="header__right">
-              <div class="header__item"><a data-open-login class="btn">Ingresar</a></div>
+              <div class="header__item header__item--search--mobile">
+                <!--span.fa.fa-search-->
+              </div>
+              <div class="header__item header__item--button"><a href="#" target="_blank" class="btn">Acceder</a></div>
               <div class="header__item header__item--ham">
                 <div class="header__ham"><span></span><span></span><span></span></div>
               </div>
@@ -80,89 +75,176 @@
       <section class="section--main">
         <div class="section__primary">
           <div class="section__wrap section__wrap--main">
-            <div class="section__body">
-              <h1 class="section__title">Descarga, crea, firma  y gestiona todos los <span class="words-alternate" data-delay="4000" data-words="Contratos,Facturas,Poderes" style>documetos</span> que tu o tu empresa necesitan.</h1>
-              <p class="section__description">Contamos con un software de ultima generacion que facilita la gestion y firma de todos tus documentos de manera electronica y avanzada</p>
-              <div class="section__search">
-                <input id="search" type="text" placeholder="Buscar documento">
-              </div>
+            <div class="section__body dscroll">
+              <h1 class="section__title">Descarga, sube, crea y firma  <span class="words-alternate" data-delay="2000" data-words="contratos,facturas,poderes, pagarés, cartas" style>documentos</span> a solo un click</h1>
+              <p class="section__description">Contamos con un software de ultima generacion que facilita la gestion y firma de todos tus documentos de manera electronica y avanzada</p><a href="docs.html" class="btn">Ir a ver tramites</a>
+              <!--.section__search
+              .section__search__results
+              	input#search(type="text" placeholder="Buscar documento")
+              .section__search__button
+              	img(src="./img/icons/search.svg")
+              -->
             </div>
-            <div class="section__image"> <img src="./img/gif/3.gif"></div>
+            <div class="section__image dscroll"><img src="./img/gif/3-1.gif"></div>
           </div>
         </div>
       </section>
-      <section class="section--usertype"> 
-        <div class="section__wrap section__wrap--sm"> 
-          <h2 class="section__title">Tenemos la solucion que buscas</h2>
-          <div class="cols"> 
-            <div class="col-xs-12 col-md-6"> 
-              <article class="article--user">
-                <div class="article__body"> <img src="./img/icons/people.svg">
-                  <h4 class="article__title">Personas </h4>
-                  <p class="article__description">Odio vitae netus bibendum donec fusce morbi facilisis imperdiet aliquet aliquet nunc feugiat curabitur ad colus nulla ad duis pharetra.
-                  </p><a href="persons.html">Ver mas</a>
-                </div>
-              </article>
-            </div>
-            <div class="col-xs-12 col-md-6"> 
-              <article class="article--user">
-                <div class="article__body"><img src="./img/icons/business.svg">
-                  <h4 class="article__title">Empresas</h4>
-                  <p class="article__description">Consectetur ornare morbi venenatis nulla sodales elementum est nostra dapibus lacus curabitur quisque ultrices libero consequat sollicitudin accumsan semper orci.
-                  </p><a href="businesses.html">Ver mas</a>
-                </div>
-              </article>
-            </div>
-          </div>
-        </div>
-      </section>
+      <!--section.section--usertype 
+      .section__wrap.section__wrap--sm 
+      	.cols 
+      		.col-xs-12.col-md-6 
+      			article.article--user
+      				.article__body
+      					.article__image
+      						img(src="./img/icons/people.svg")
+      					h4.article__title Personas 
+      					p.article__description Realiza t
+      					a.btn(href="persons.html") Ir a personas
+      		.col-xs-12.col-md-6 
+      			article.article--user
+      				.article__body
+      					.article__image
+      						img(src="./img/icons/business.svg")
+      					h4.article__title Empresas
+      					p.article__description: +lorem(15)
+      					a.btn(href="businesses.html") Ir a empresas
+      
+      
+      -->
       <section class="section--features">
         <div class="section__wrap">
           <div class="cols">
             <div class="col-md-6">
-              <div class="section__upper">
-                <article class="article--feature">
-                  <div class="article__body">
-                    <div class="article__image"><img src="./img/icons/clipboard.gif"></div>
-                    <h4 class="article__title">Completa Formularios</h4>
-                    <p class="article__description">Per risus rutrum ultrices curae augue duis risus etiam varius
-                    </p>
-                  </div>
-                </article>
-                <article class="article--feature">
-                  <div class="article__body"> 
-                    <div class="article__image"><img src="./img/icons/edit.gif"></div>
-                    <h4 class="article__title">Firma electrónica o avanzada</h4>
-                    <p class="article__description">Etiam malesuada aenean imperdiet gravida lacinia neque orci donec aliquam
-                    </p>
-                  </div>
-                </article>
-              </div>
-              <div class="section__lower">
-                <article class="article--feature"> 
-                  <div class="article__body">	
-                    <div class="article__image"><img src="./img/icons/archive.gif"></div>
-                    <h4 class="article__title">Almacena tus documentos</h4>
-                    <p class="article__description">Convallis litora habitasse rutrum augue platea sapien cursus proin donec
-                    </p>
-                  </div>
-                </article>
-                <article class="article--feature">
-                  <div class="article__body"> 
-                    <div class="article__image"><img src="./img/icons/flow-chart.gif"></div>
-                    <h4 class="article__title">Crea tus propios flujos</h4>
-                    <p class="article__description">Fusce lobortis pulvinar aliquet bibendum quis fames in nostra quam
-                    </p>
-                  </div>
-                </article>
+              <div class="section__articles dscroll"> 
+                <div class="section__upper">
+                  <article class="article--feature article--feature--index">
+                    <div class="article__body">
+                      <div class="article__image"><img src="./img/icons/clipboard.gif"></div>
+                      <h4 class="article__title">Personaliza tu documento mediante formularios</h4>
+                      <p class="article__description">Personaliza muy facilmente la informacion contenida en tu documento completando formularios</p>
+                    </div>
+                  </article>
+                  <article class="article--feature article--feature--index">
+                    <div class="article__body"> 
+                      <div class="article__image"><img src="./img/icons/edit.gif"></div>
+                      <h4 class="article__title">Firma electrónica o avanzada</h4>
+                      <p class="article__description">Firma e invita a firmar  tus documentos a las partes involucradas sin tener que salir de tu casa</p>
+                    </div>
+                  </article>
+                </div>
+                <div class="section__lower">
+                  <article class="article--feature article--feature--index">
+                    <div class="article__body">	
+                      <div class="article__image"><img src="./img/icons/archive.gif"></div>
+                      <h4 class="article__title">Almacena tus documentos</h4>
+                      <p class="article__description">Crea tu cuenta y almacena todos tu documentos en un solo lugar de manera segura y practica</p>
+                    </div>
+                  </article>
+                  <article class="article--feature article--feature--index">
+                    <div class="article__body"> 
+                      <div class="article__image"><img src="./img/gif/bubble-chat.gif"></div>
+                      <h4 class="article__title">Obten aseroria de expertos</h4>
+                      <p class="article__description">Si tienes dudas cuentas con la asesoria de abogados en tiempo real</p>
+                    </div>
+                  </article>
+                </div>
               </div>
             </div>
             <div class="col-md-6">
-              <div class="section__body"> 
+              <div class="section__body dscroll"> 
                 <h5 class="section__uppertitle">Dile adios a las notarias.</h5>
                 <h2 class="section__title">Gestiona tus documentos facilmente.</h2>
-                <p class="section__content">Enim ultricies vel nec taciti aptent quisque fermentum luctus nibh. Nunc fringilla erat platea senectus ornare praesent varius tortor et. Laoreet lacinia leo etiam viverra habitasse etiam ut aliquam laoreet posuere fringilla justo est enim cursus adipiscing accumsan orci auctor.
-                </p><a href="#" class="btn">Ver mas</a>
+                <p class="section__content">Gestdoc te permite obtener documentos tales como contratos, certificado y tramites legales en general. Pudiendo descargarlos, almacenarlos en tu cuenta y firmalos de manera remota sin tener que salir de tu casa. Solo selecciona tu tramite, rellena los formularios solicitados y obten tu documento, pudiendo firmalo tu y la cantidad de personas que estimes de manera simple o avanzada.</p><a href="persons.html" class="btn">Ver mas<span class="fa fa-external-link"></span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--partners">
+        <div class="section__wrap"> 
+          <div class="section__images">
+            <div class="section__image"><img src="./img/logos/ecert.png"></div>
+            <div class="section__image">		<img src="./img/logos/logo-upayments.svg"></div>
+            <div class="section__image"><img src="./img/logos/logo-alc-logo.png"></div>
+            <div class="section__image section__image--resit"><img src="./img/logos/logo-resit-white.png"></div>
+            <div class="section__image"><img src="./img/logos/digevo-logo.png"></div>
+          </div>
+        </div>
+      </section>
+      <section class="section--faq">
+        <div class="section__wrap"> 
+          <div class="section__header"> 
+            <h2 class="section__title">Como es el proceso de <span>firma</span></h2>
+            <p class="section__description">Mauris posuere tristique molestie turpis viverra facilisis curae leo semper. Euismod litora et magna netus sagittis hendrerit gravida id ligula non nulla at curabitur est inceptos erat sociosqu tempor tempus.
+            </p>
+          </div>
+          <div class="section__body">
+            <div class="cols">
+              <div class="col-md-6 dscroll">
+                <div class="section__faq"> 
+                  <div class="faq">
+                    <div class="faq__item">
+                      <h3 class="faq__question"><span class="fa fa-angle-down"></span>Elige un documento preformateado</h3>
+                      <div class="faq__answer">
+                        <div class="section__content"> 
+                          <p class="section__description">Tempus aenean duis volutpat hac hac nisl quisque egestas congue. Consectetur donec at tellus conubia fusce commodo litora netus purus feugiat varius commodo morbi fermentum.
+                          </p>
+                          <p class="section__description">Per gravida habitant vivamus elit accumsan nam diam est mauris. Magna taciti vulputate curabitur euismod urna erat augue in curae proin fermentum donec malesuada vivamus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="faq__item">
+                      <h3 class="faq__question"><span class="fa fa-angle-down"></span>Personaliza tu documento mediante formularios</h3>
+                      <div class="faq__answer">
+                        <div class="section__content">
+                          <p class="section__description">Molestie erat nisi sodales facilisis ut primis gravida dictum curabitur. Cursus arcu proin varius netus habitasse aenean aliquam velit tincidunt pulvinar curabitur rutrum venenatis odio.
+                          </p>
+                          <p class="section__description">Diam adipiscing integer consequat vitae egestas potenti justo quisque cursus. Rutrum tincidunt vehicula litora habitasse sollicitudin varius euismod eget diam consequat vestibulum curae magna porta.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="faq__item">
+                      <h3 class="faq__question"><span class="fa fa-angle-down"></span>Los firmantes reciben una solicitud de firma a su mail</h3>
+                      <div class="faq__answer">
+                        <div class="section__content">
+                          <p class="section__description">Hendrerit blandit egestas nulla habitant mattis elementum fames nunc ac. Vestibulum eros inceptos semper non lobortis laoreet aenean feugiat risus odio fermentum commodo nibh odio.
+                          </p>
+                          <p class="section__description">Aenean lectus cursus lobortis morbi rhoncus congue sapien mollis senectus. Massa odio porta habitant orci habitasse sapien volutpat cubilia porta ut tortor bibendum habitasse netus.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="faq__item">
+                      <h3 class="faq__question"><span class="fa fa-angle-down"></span>Obten tu documento firmado </h3>
+                      <div class="faq__answer">
+                        <div class="section__content">
+                          <p class="section__description">Ligula pellentesque felis at posuere turpis habitant consectetur tellus porta. Habitasse erat magna imperdiet est himenaeos porta elit justo donec praesent cubilia pellentesque phasellus dictum.
+                          </p>
+                          <p class="section__description">Malesuada augue inceptos adipiscing sem aliquam sapien ac nam auctor. Justo aenean metus enim dictum duis urna volutpat conubia porta egestas cursus neque mattis vulputate.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 dscroll">
+                <div class="section__gifs">
+                  <div class="section__gif section__gif--show">
+                    <video src="img/uploads/demogestdoc.mp4" type="video/mp4" autoplay="autoplay" controls="controls"> </video>
+                  </div>
+                  <div class="section__gif">
+                    <video src="img/uploads/demogestdoc.mp4" type="video/mp4" autoplay="autoplay" controls="controls"> </video>
+                  </div>
+                  <div class="section__gif">
+                    <video src="img/uploads/demogestdoc.mp4" type="video/mp4" autoplay="autoplay" controls="controls"> </video>
+                  </div>
+                  <div class="section__gif">
+                    <video src="img/uploads/demogestdoc.mp4" type="video/mp4" autoplay="autoplay" controls="controls"> </video>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -171,37 +253,29 @@
       <section class="section--features section--features--2">
         <div class="section__wrap"> 
           <div class="cols">	
-            <div class="col-md-6">
+            <div class="col-md-6 dscroll">
               <div class="section__body"> 
-                <h5 class="section__uppertitle">Dile adios a las notarias.</h5>
-                <h2 class="section__title">Gestiona tus documentos facilmente.</h2>
-                <p class="section__content">Aptent odio litora ad netus bibendum tellus cubilia donec mattis. Condimentum viverra magna proin lacus sollicitudin mollis aenean leo interdum. Lacus donec nullam feugiat nostra fermentum pharetra curabitur viverra eget ad pretium congue massa vulputate in nostra himenaeos curae ultrices.
-                </p>
+                <h5 class="section__uppertitle">Muchos tramites pocos clicks.</h5>
+                <h2 class="section__title">El software de firmas que tu <span>empresa</span> necesita.</h2>
+                <p class="section__content">Obten para tu empresa el software de Gestdoc y crea todos los flujos para tus documentos que necesites de manera completamente personalizada. Tenemos diversos planes que se ajustan a tus necesidades basados en la cantidad de procesos y firmas mensuales.</p><a href="/businesses.html" class="btn">Ir a Gestdoc empresas</a>
               </div>
             </div>
-            <div class="col-md-6"> 
-              <div class="section__image"> <img src="./img/gif/2.gif"></div>
+            <div class="col-md-6 dscroll">
+              <div class="section__image"> <img src="./img/icons/Contract.svg"></div>
             </div>
           </div>
         </div>
       </section>
-      <section class="section--partners"> 
-        <div class="section__wrap"> 
-          <div class="section__images">
-            <div class="section__image"><img src="./img/logos/logo1.png"></div>
-            <div class="section__image">		<img src="./img/logos/logo4.png"></div>
-            <div class="section__image"><img src="./img/logos/logo5.png"></div>
-            <div class="section__image"><img src="./img/logos/logo1.png"></div>
-          </div>
-        </div>
-      </section>
-      <section class="section--contactus"> 
+      <section class="section--faq section--faq--index">
         <div class="section__wrap"> 
           <div class="cols">
+            <div class="col-md-6"> 
+              <div class="section__image"> <img src="./img/icons/FAQs.svg"></div>
+            </div>
             <div class="col-md-6">
               <div class="section__faq"> 
                 <div class="section__header"> 
-                  <h2 class="section__title">Tienes alguna duda?</h2>
+                  <h2 class="section__title">Preguntas frecuentes </h2>
                 </div>
                 <div class="section__body">
                   <div class="faq">
@@ -209,9 +283,9 @@
                       <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit</h3>
                       <div class="faq__answer">
                         <div class="section__content">
-                          <p class="section__description">Phasellus lectus nec pulvinar ornare etiam curabitur auctor malesuada pretium. Conubia per vivamus purus ligula sociosqu ut convallis vulputate potenti phasellus curae magna ut tristique.
+                          <p class="section__description">Curabitur ultricies aenean pulvinar conubia semper donec conubia lectus mollis. Venenatis augue torquent velit pharetra nibh ad pulvinar gravida torquent porttitor varius porttitor himenaeos nec.
                           </p>
-                          <p class="section__description">Fringilla conubia consectetur nec suscipit maecenas tincidunt eleifend mauris torquent. Porta at donec aenean adipiscing condimentum ante mi aliquam faucibus tincidunt suspendisse sodales dictumst laoreet.
+                          <p class="section__description">Mollis ut viverra velit tellus ut mi tristique magna integer. Aliquam etiam nec netus velit vulputate at sollicitudin fringilla pellentesque integer elementum phasellus ac vitae.
                           </p>
                         </div>
                       </div>
@@ -220,9 +294,9 @@
                       <h3 class="faq__question"><span class="fa fa-angle-down"></span>Dicta beatae libero illo</h3>
                       <div class="faq__answer">
                         <div class="section__content">
-                          <p class="section__description">Tincidunt aptent eleifend rutrum volutpat in ultricies convallis per hendrerit. Mauris quam pulvinar nibh quam molestie lobortis convallis sed consectetur habitasse ac consectetur nostra ultricies.
+                          <p class="section__description">Netus viverra phasellus maecenas senectus odio colus elementum massa ut. Augue etiam cursus euismod bibendum eros nostra habitant luctus gravida leo id suspendisse torquent ullamcorper.
                           </p>
-                          <p class="section__description">Enim cras nulla porttitor felis sem ultricies cursus dapibus nec. Varius odio nunc auctor pulvinar maecenas vivamus mattis aenean elit sem vestibulum aliquet sapien taciti.
+                          <p class="section__description">Nullam non sem donec non cursus erat suscipit a eleifend. Quam mattis praesent sapien nam ante lobortis habitant per ante bibendum hendrerit in ultrices in.
                           </p>
                         </div>
                       </div>
@@ -231,21 +305,27 @@
                       <h3 class="faq__question"><span class="fa fa-angle-down"></span>Similique omnis dolore accusamus labore dolor porro</h3>
                       <div class="faq__answer">
                         <div class="section__content">
-                          <p class="section__description">Suscipit class magna vel donec sodales vitae leo mollis sem. Est felis morbi id vehicula magna tempor platea tincidunt sagittis eget himenaeos felis justo neque.
+                          <p class="section__description">Lacus habitasse sagittis non tristique massa consectetur blandit felis posuere. Aptent sociosqu vel morbi mi molestie pulvinar interdum quisque turpis lobortis molestie ut semper himenaeos.
                           </p>
-                          <p class="section__description">Mi interdum consectetur at posuere turpis nec mattis porta potenti. Luctus malesuada vitae malesuada cubilia sem quisque lectus cubilia ultrices quisque mattis gravida egestas leo.
+                          <p class="section__description">Tincidunt leo et conubia ultrices hac nulla litora lobortis fermentum. Inceptos sapien neque massa integer potenti posuere commodo praesent donec fringilla purus sagittis fames torquent.
                           </p>
                         </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="section__footer"><a href="#" class="btn">Contactanos</a></div>
               </div>
             </div>
-            <div class="col-md-6"> 
-              <div class="section__image"> <img src="./img/icons/Contract.svg"></div>
-            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section--contactus"> 
+        <div class="section__wrap"> 
+          <div class="section__body">	
+            <h5 class="section__toptitle">NO ESPERES MAS</h5>
+            <h3 class="section__title">Te gustaria conocer todos los beneficios que Gestdoc puede traerle a tu negocio?</h3>
+            <p class="section__description">Porttitor feugiat aenean laoreet lectus aliquam rutrum mi eros laoreet urna elementum neque massa aenean neque platea scelerisque velit risus.
+            </p><a href="#" class="btn">Hablar con un experto Gestdoc </a>
           </div>
         </div>
       </section>
@@ -275,7 +355,7 @@
               </form>
             </div>
             <div class="login__footer"><a href="#" class="btn btn--link">Olvide mi contraseña</a><a href="#" class="btn btn--link">Registrarme</a></div>
-            <p class="login__description">Turpis colus conubia pharetra euismod turpis rutrum suspendisse etiam iaculis. Sociosqu vel odio vel odio habitasse colus varius habitasse massa faucibus praesent mauris nullam ligula.
+            <p class="login__description">Consectetur scelerisque pulvinar maecenas sed litora sollicitudin arcu vitae interdum. Tincidunt augue ligula dictumst pulvinar nibh orci ornare bibendum donec dui eros donec donec lacinia.
             </p>
           </div>
         </div>
@@ -303,7 +383,7 @@
               </form>
             </div>
             <div class="login__footer"><a href="#" class="btn btn--link">Olvide mi contraseña</a><a href="#" class="btn btn--link">Ingresar</a></div>
-            <p class="login__description">Id nulla malesuada ante viverra ad gravida vehicula nullam vestibulum. Urna habitasse fermentum suscipit cursus laoreet malesuada class tempor aptent quam tempus nisi arcu vel.
+            <p class="login__description">Facilisis etiam facilisis etiam ultrices aliquet sociosqu class quisque odio. Torquent lobortis neque dui arcu odio imperdiet tortor habitasse faucibus neque ad morbi ornare dictumst.
             </p>
           </div>
         </div>
@@ -312,7 +392,7 @@
     <footer>
       <div class="footer__wrap">
         <div class="cols">
-          <div class="col-xs-6 col-md-2">
+          <div class="col-xs-6 col-md-3">
             <div class="footer__links">
               <ul>
                 <li class="footer__links__title">Menú</li>
@@ -323,7 +403,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-xs-6 col-md-2">
+          <div class="col-xs-6 col-md-3">
             <div class="footer__links">
               <ul>
                 <li class="footer__links__title">Ayuda</li>
@@ -333,7 +413,7 @@
               </ul>
             </div>
           </div>
-          <div class="col-xs-12 col-md-8">
+          <div class="col-xs-12 col-md-3">
             <div class="footer__info">
               <div class="footer__socials">
                 <ul>
@@ -346,12 +426,15 @@
               <p class="footer__description">+56 9 8484 4444</p>
             </div>
           </div>
-          <div class="col-md-12">
+          <div class="col-xs-12 col-md-3">
             <div class="footer__copyright">
               <div class="footer__logo"><img src="img/icons/logo-gestdoc-blue.svg"></div>
-              <div class="footer__description">Todos los derechos reservados Gestdoc S.A 2020. Huerfanos 1120 of 1408, Santiago, CHile</div>
             </div>
           </div>
+          <!--.col-md-12 
+          .footer__copyright   
+          .footer__description Todos los derechos reservados Gestdoc S.A 2020. Huerfanos 1120 of 1408, Santiago, CHile
+          -->
         </div>
       </div>
     </footer>

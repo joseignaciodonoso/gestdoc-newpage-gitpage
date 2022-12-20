@@ -33,7 +33,7 @@ window.addEventListener('load', function () {
     http.send(params);
 
     $(".article--doc").on("click", function () {
-        console.log("articvle--docs")
+        console.log("article--docs")
         $(".modal--docs").addClass("modal--in");
         var category = $(this).attr('id')
         var htmlBody = ''
@@ -44,7 +44,7 @@ window.addEventListener('load', function () {
 
     document.getElementById("search").addEventListener("keyup", function () {
         var htmlBody = ''
-        if (this.value.length >= 3) {
+        if (this.value.length >= 1) {
             document.getElementById('block-list').innerHTML = ''
             var justFound = findWords(this.value, gestdocRequest)
             htmlBody = htmlList(justFound);

@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Gestdoc</title>
+    <meta charset="UTF-8">
+    <link href="img/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="css/main.css?v=43411" rel="stylesheet" type="text/css">
+    <script src="js/main.js?v=43411" type="text/javascript"></script>
+    <!-- Meta tags facebook-->
+    <meta property="og:title" content="#">
+    <meta property="og:description" content="#">
+    <meta property="og:image" content="#">
+    <!-- Meta tags twitter cards-->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="#">
+    <meta name="twitter:description" content="#">
+    <meta name="twitter:image" content="#">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,400;0,500;0,600;0,800;0,900;1,400;1,700&amp;display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com" rel="preconnect">
+    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+    <!--[if lt IE 9]> <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script> <![endif]-->
+    <script src="js/selectpower.js"></script>
+    <script src="gestdocRequest.js"></script>
+  </head>
+  <body>
+    <header>
+      <div class="header__primary">
+        <div class="header__wrap">
+          <div class="header__search">
+            <form action="search.html" method="get"><span class="fa fa-search"></span>
+              <input type="text" name="s" placeholder="Buscar caso de éxito">
+            </form>
+          </div>
+          <div class="header__inner">
+            <div class="header__logo header__logo--color"><a href="index.html"><img src="./img/logos/logo-gestdoc.png"></a></div>
+            <div class="header__logo header__logo--white"><a href="index.html"><img src="./img/logos/logo-gestdoc.png"></a></div>
+            <div class="header__nav">
+              <div class="header__nav__bg"></div>
+              <div class="header__nav__nav">
+                <div class="header__nav__close">
+                  <div></div>
+                  <div></div>
+                </div>
+                <div class="header__nav__back">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                </div>
+                <nav>
+                  <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="persons.html">Personas</a></li>
+                    <li><a href="businesses.html">Empresas</a></li>
+                    <li><a href="docs.html">Tramites</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="header__right">
+              <div class="header__item header__item--search--mobile">
+                <!--span.fa.fa-search-->
+              </div>
+              <div class="header__item header__item--button"><a href="#" target="_blank" class="btn">Acceder</a></div>
+              <div class="header__item header__item--ham">
+                <div class="header__ham"><span></span><span></span><span></span></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div id="sections">
+      <section class="section--header">
+        <div class="section__wrap section__wrap--header">
+          <div class="section__body">
+            <h1 class="section__title">Preguntas frecuentes</h1>
+          </div>
+        </div>
+      </section>
+      <section class="section--faq">
+        <div class="section__wrap section__wrap--md section--md">
+          <div class="section__header">
+            <h3 class="section__title">Preguntas generales</h3>
+          </div>
+          <div class="section__body">
+            <div class="faq">
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>Lorem ipsum dolor sit</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p class="section__description">Eros dapibus venenatis lectus elit himenaeos mattis fames consequat nostra. Aenean senectus aenean arcu fames ligula elit curabitur odio habitasse eros ante himenaeos egestas cursus.
+                    </p>
+                    <p class="section__description">Etiam turpis faucibus porta himenaeos sed quisque tempor congue sodales. Purus conubia posuere ante colus vehicula volutpat per odio fames scelerisque tortor iaculis taciti neque.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>Dicta beatae libero illo</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p class="section__description">Aenean iaculis aenean aptent nostra dictum vehicula tempor tempor nisi. Ligula facilisis nulla imperdiet aenean suspendisse massa sed mi est lacus erat proin vulputate fermentum.
+                    </p>
+                    <p class="section__description">Eleifend taciti ut viverra augue laoreet nostra netus mauris convallis. Lacinia phasellus platea mattis facilisis fusce ad porttitor lectus torquent habitasse nunc aliquet arcu donec.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>Similique omnis dolore accusamus labore dolor porro</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p class="section__description">Euismod leo blandit tellus curabitur donec volutpat dapibus iaculis ut. Congue enim magna sem dapibus nec viverra nisl varius tellus potenti platea dictum vestibulum suscipit.
+                    </p>
+                    <p class="section__description">Curabitur interdum tempor at auctor semper quis volutpat dapibus quam. Placerat vivamus consequat tincidunt nostra pharetra congue vitae auctor etiam fusce orci lectus interdum sollicitudin.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="section__header">
+            <h3 class="section__title">Requisitos</h3>
+          </div>
+          <div class="section__body">
+            <div class="faq">
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>Architecto aperiam quo quis facilis</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p class="section__description">Dapibus torquent ornare class potenti augue vulputate ante convallis conubia. Luctus in accumsan placerat consectetur eros elementum ultrices nulla gravida fringilla etiam vitae himenaeos id.
+                    </p>
+                    <p class="section__description">Interdum porttitor mattis aptent tempus mauris congue auctor elementum ultricies. Curabitur nec tempus non turpis nostra massa ultrices aliquam proin condimentum lobortis quis per est.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>Dolore accusamus labore dolor porro, architecto aperiam</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p class="section__description">Potenti interdum posuere dictumst aliquet sagittis lobortis nisl donec imperdiet. Faucibus venenatis metus erat duis odio curabitur risus ante aliquam a netus suscipit auctor tincidunt.
+                    </p>
+                    <p class="section__description">Vehicula nostra pulvinar vehicula nulla varius sagittis et molestie praesent. Gravida nullam malesuada interdum nec eget congue lacinia quis accumsan neque tincidunt euismod donec ligula.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="faq__item">
+                <h3 class="faq__question"><span class="fa fa-angle-down"></span>Similique omnis dolore accusamus labore dolor porro</h3>
+                <div class="faq__answer">
+                  <div class="section__content">
+                    <p class="section__description">Tellus ut tellus ac etiam dictum dictum pharetra mollis fermentum. Scelerisque ultrices egestas auctor imperdiet arcu tempus ultrices est aptent aptent ultrices turpis nunc scelerisque.
+                    </p>
+                    <p class="section__description">Vitae varius bibendum commodo habitant cursus dictum sagittis aenean pulvinar. Augue porttitor blandit nibh praesent arcu orci feugiat ut elit dictum tincidunt nulla cursus suscipit.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="login">
+        <div class="login__back"></div>
+        <div class="login__front login__front--login">
+          <div class="login__box">
+            <div class="login__icon"><img src="img/icons/logo-gestdoc.png"></div>
+            <div class="login__form">
+              <form class="form">
+                <div class="form__element">
+                  <div class="form__input">
+                    <input type="email" placeholder="Mail">
+                  </div>
+                </div>
+                <div class="form__element">
+                  <div class="form__input">
+                    <input type="password" placeholder="Clave">
+                    <button class="btn">Entrar</button>
+                  </div>
+                </div>
+                <div class="form__element form__element--center">
+                  <label>
+                    <input type="checkbox" name="#" value="#">Mantener mi sesión
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="login__footer"><a href="#" class="btn btn--link">Olvide mi contraseña</a><a href="#" class="btn btn--link">Registrarme</a></div>
+            <p class="login__description">Non turpis in pellentesque mollis congue imperdiet aliquam rutrum lectus. Quam platea semper nibh aenean colus inceptos tempor mi tincidunt erat mauris risus vestibulum lobortis.
+            </p>
+          </div>
+        </div>
+        <div class="login__front login__front--register">
+          <div class="login__box">
+            <div class="login__icon"><img src="img/icons/logo-gestdoc.png"></div>
+            <div class="login__form">
+              <form class="form">
+                <div class="form__element">
+                  <div class="form__input">
+                    <input type="email" placeholder="Mail">
+                  </div>
+                </div>
+                <div class="form__element">
+                  <div class="form__input">
+                    <input type="password" placeholder="Clave">
+                    <button class="btn">Registrar</button>
+                  </div>
+                </div>
+                <div class="form__element form__element--center">
+                  <label>
+                    <input type="checkbox" name="#" value="#">Acepto los términos y condiciones
+                  </label>
+                </div>
+              </form>
+            </div>
+            <div class="login__footer"><a href="#" class="btn btn--link">Olvide mi contraseña</a><a href="#" class="btn btn--link">Ingresar</a></div>
+            <p class="login__description">Leo aliquet venenatis quisque quis curabitur lacinia sapien platea luctus. Et pretium ut et arcu facilisis integer luctus mi imperdiet litora arcu euismod nam quis.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footer__wrap">
+        <div class="cols">
+          <div class="col-xs-6 col-md-3">
+            <div class="footer__links">
+              <ul>
+                <li class="footer__links__title">Menú</li>
+                <li><a href="#">Inicio</a></li>
+                <li><a href="#">Documentos</a></li>
+                <li><a href="#">Legalidad</a></li>
+                <li><a href="#">Términos y condiciones</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-6 col-md-3">
+            <div class="footer__links">
+              <ul>
+                <li class="footer__links__title">Ayuda</li>
+                <li><a href="faq.html">Preguntas frecuentes</a></li>
+                <li><a href="#">Contacto</a></li>
+                <li><a href="#">Políticas</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="footer__info">
+              <div class="footer__socials">
+                <ul>
+                  <li> <a href="#"><span class="fa fa-facebook"></span></a></li>
+                  <li> <a href="#"><span class="fa fa-instagram"></span></a></li>
+                  <li> <a href="#"><span class="fa fa-youtube"></span></a></li>
+                </ul>
+              </div>
+              <p class="footer__description">contacto@gestidoc.cl</p>
+              <p class="footer__description">+56 9 8484 4444</p>
+            </div>
+          </div>
+          <div class="col-xs-12 col-md-3">
+            <div class="footer__copyright">
+              <div class="footer__logo"><img src="img/icons/logo-gestdoc-blue.svg"></div>
+            </div>
+          </div>
+          <!--.col-md-12 
+          .footer__copyright   
+          .footer__description Todos los derechos reservados Gestdoc S.A 2020. Huerfanos 1120 of 1408, Santiago, CHile
+          -->
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
